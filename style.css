@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #9c27b0, #8ecdff);
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    /* background-color: yellow;  */
+    width: 100%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+nav .logo {
+    width: 30%;
+    /* background-color: aqua; */
+    padding-left: 120px;
+}
+
+nav .logo h1 {
+    font-size: 2.5rem;
+    padding-top: 5px;
+}
+
+.nav-section {
+    width: 50%;
+    /* background-color: #9c27b0; */
+}
+
+.nav-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-section ul li {
+    list-style: none;
+    /* background-color: aqua; */
+    width: 25%;
+}
+
+.nav-section ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.info {
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+    /* background-color: #ccc; */
+}
+
+.features {
+    position: absolute;
+    display: flex;
+}
+
+.features div {
+    margin-left: 30px;
+    color: white;
+}
+
+.features div p {
+    margin-top: 8px;
+}
+
+.features img {
+    width: 70px;
+    filter: invert(100);
+}
+
+.one {
+    top: 450px;
+    right: 50px;
+}
+
+.two {
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four {
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+
+.mobile {
+    /* width: 200px; */
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.control img {
+    width: 55px;
+    cursor: pointer;
+}
+
+#downbtn {
+    transform: rotate(180deg);
+}
+
+.overlap {
+    width: 0;
+    height: 0;
+    border-top: 500px solid rgb(255, 255, 255);
+    border-bottom: 500px solid rgb(255, 255, 255);
+    border-left: 500px solid rgb(255, 255, 255);
+    border-right: 500px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
